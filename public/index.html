@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <style>
+        
+        .my-container{
+            display: flex;
+            margin-left: 20px;
+            flex-direction: column;
+        }
+        .my-container div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>API HOMEPAGE</h1>
+    <br><br>
+    <div class="my-container">
+        <h2>Products</h2>
+        <div>get all products -> GET https://simplestore.onrender.com/api/v1/product</div>
+        <div>get a product -> GET https://simplestore.onrender.com/api/v1/product/:id</div>
+        <div>create a product -> POST https://simplestore.onrender.com/api/v1/product</div>
+        <div>update a product -> PUT https://simplestore.onrender.com/api/v1/product/:id</div>
+        <div>delete a product -> DELETE https://simplestore.onrender.com/api/v1/product/:id</div>
+    </div>
+    <br><br>
+    <div class="my-container">
+        <h2>Orders</h2>
+        <div>get all orders -> GET https://simplestore.onrender.com/api/v1/order</div>
+        <div>get a order -> GET https://simplestore.onrender.com/api/v1/order/:id</div>
+        <div>create a order -> POST https://simplestore.onrender.com/api/v1/order</div>
+    </div>
+</body>
+</html>

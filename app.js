@@ -17,6 +17,7 @@ const domain = process.env.DOMAIN || `http://localhost:${port}`
 app.use(cors())
 app.use(helmet())
 app.use(express.json())
+app.use(express.static('public'))
 app.use('/api/v1/order', orderRouter)
 app.use('/api/v1/product', productRouter)
 app.use(errorHandlerMiddleware)

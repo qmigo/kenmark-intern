@@ -21,6 +21,8 @@ const getOrder = async(req, res)=>{
     throw new customAPIError(300, "Order Id is must")
 
     const order = await Order.findById(id)
+    if(!order)
+    throw new customAPIError(400, "Order not found")
     res.status(200).json({ order })
 }
 

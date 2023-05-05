@@ -23,6 +23,9 @@ const getProduct = async(req, res)=>{
     throw new customAPIError(300, "Product Id is must")
 
     const product = await Product.findById(id)
+    if(!product)
+    throw new customAPIError(400, "Product not found")
+    
     res.status(200).json({ product })
 }
 
