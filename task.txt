@@ -1,0 +1,11 @@
+Node Js Task
+You have been tasked with building a backend API for a simple online store. The API should allow users to perform basic CRUD operations on products and orders, including:
+
+Create a new product
+Retrieve a list of all products
+Retrieve a single product by ID
+Update a product by ID
+Delete a product by ID
+Create a new order
+Retrieve a list of all orders
+Retrieve a single order by ID
