@@ -12,7 +12,7 @@ const errorHandlerMiddleware = require('./middleware/error-handler')
 
 const app = express()
 const port = process.env.PORT || 5000
-const domain = process.env.DOMAIN || `http://localhost:${port}`
+const domain = `http://localhost:${port}`
 
 app.use(cors())
 app.use(helmet())
